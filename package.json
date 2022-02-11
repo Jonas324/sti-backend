@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -12,8 +12,13 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jonas324/sti-backend/issues"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "healthcheck": "^0.1.3"
+  },
+  "engines": {
+    "node": "17.x"
   },
   "homepage": "https://github.com/Jonas324/sti-backend#readme"
 }
