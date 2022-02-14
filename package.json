@@ -2,16 +2,20 @@
   "name": "sti-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jonas324/sti-backend.git"
+    "url": "git+https://github.com/Juliosc1/sti-backend.git"
   },
-  "author": "",
+  "author": "julio",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juliosc1/sti-backend/issues"
+  },
+  "homepage": "https://github.com/Juliosc1/sti-backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
@@ -19,6 +23,6 @@
   },
   "engines": {
     "node": "17.x"
-  },
-  "homepage": "https://github.com/Jonas324/sti-backend#readme"
+  }
+  
 }
