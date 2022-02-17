@@ -4,13 +4,13 @@ const req = require("express/lib/request")
 const res = require("express/lib/response")
 
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 app.use('/healtcheck', require('./routes/healthcheck.routes'))
 app.use(express.urlencoded({ extended: true}));
 app.use(cors())
 
-app.get("/football", (req, res)=>{
+app.get("/cell", (req, res)=>{
     headers={"http_status":200, "cache-control": "no-cache"}
     body=
     [
@@ -36,5 +36,5 @@ app.get("/football", (req, res)=>{
 })
 
 app.listen(PORT , ()=>{
-    console.log('STARTED LISTENING ON PORT ${PORT}')
+    console.log(`STARTED LISTENING ON PORT ${PORT}`)
 })
