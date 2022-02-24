@@ -10,7 +10,7 @@ app.use('/healtcheck', require('./routes/healthcheck.routes'))
 app.use(express.urlencoded({ extended: true}));
 app.use(cors())
 
-app.get("/cell", (req, res)=>{
+app.get("/healthcheck", (req, res)=>{
 headers={"http_status":200, "cache-control": "no-cache"}
 body=
 [
